@@ -1,14 +1,14 @@
 //
-//  HappyLocTests.swift
-//  HappyLocTests
+//  HappylocTests.swift
+//  HappylocTests
 //
-//  Created by Florian Touraine on 05/04/2025.
+//  Created by Florian Touraine on 07/04/2025.
 //
 
 import Testing
-@testable import HappyLoc
+@testable import Happyloc
 
-struct HappyLocTests {
+struct HappylocTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

@@ -1,13 +1,13 @@
 //
-//  HappyLocUITests.swift
-//  HappyLocUITests
+//  HappylocUITests.swift
+//  HappylocUITests
 //
-//  Created by Florian Touraine on 05/04/2025.
+//  Created by Florian Touraine on 07/04/2025.
 //
 
 import XCTest
 
-final class HappyLocUITests: XCTestCase {
+final class HappylocUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

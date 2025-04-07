@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		17585CA62DA1485E0099A4E6 /* PBXContainerItemProxy */ = {
+		17585D112DA3FE090099A4E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 17585C902DA1485C0099A4E6 /* Project object */;
+			containerPortal = 17585CF92DA3FE070099A4E6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17585C972DA1485C0099A4E6;
-			remoteInfo = HappyLoc;
+			remoteGlobalIDString = 17585D002DA3FE070099A4E6;
+			remoteInfo = Happyloc;
 		};
-		17585CB02DA1485E0099A4E6 /* PBXContainerItemProxy */ = {
+		17585D1B2DA3FE090099A4E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 17585C902DA1485C0099A4E6 /* Project object */;
+			containerPortal = 17585CF92DA3FE070099A4E6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17585C972DA1485C0099A4E6;
-			remoteInfo = HappyLoc;
+			remoteGlobalIDString = 17585D002DA3FE070099A4E6;
+			remoteInfo = Happyloc;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17585C982DA1485C0099A4E6 /* HappyLoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyLoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17585CA52DA1485E0099A4E6 /* HappyLocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyLocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17585CAF2DA1485E0099A4E6 /* HappyLocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyLocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17585D012DA3FE070099A4E6 /* Happyloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happyloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17585D102DA3FE090099A4E6 /* HappylocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappylocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17585D1A2DA3FE090099A4E6 /* HappylocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappylocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		17585C9A2DA1485C0099A4E6 /* HappyLoc */ = {
+		17585D032DA3FE070099A4E6 /* Happyloc */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HappyLoc;
+			path = Happyloc;
 			sourceTree = "<group>";
 		};
-		17585CA82DA1485E0099A4E6 /* HappyLocTests */ = {
+		17585D132DA3FE090099A4E6 /* HappylocTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HappyLocTests;
+			path = HappylocTests;
 			sourceTree = "<group>";
 		};
-		17585CB22DA1485E0099A4E6 /* HappyLocUITests */ = {
+		17585D1D2DA3FE090099A4E6 /* HappylocUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HappyLocUITests;
+			path = HappylocUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17585C952DA1485C0099A4E6 /* Frameworks */ = {
+		17585CFE2DA3FE070099A4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CA22DA1485E0099A4E6 /* Frameworks */ = {
+		17585D0D2DA3FE090099A4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CAC2DA1485E0099A4E6 /* Frameworks */ = {
+		17585D172DA3FE090099A4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17585C8F2DA1485C0099A4E6 = {
+		17585CF82DA3FE070099A4E6 = {
 			isa = PBXGroup;
 			children = (
-				17585C9A2DA1485C0099A4E6 /* HappyLoc */,
-				17585CA82DA1485E0099A4E6 /* HappyLocTests */,
-				17585CB22DA1485E0099A4E6 /* HappyLocUITests */,
-				17585C992DA1485C0099A4E6 /* Products */,
+				17585D032DA3FE070099A4E6 /* Happyloc */,
+				17585D132DA3FE090099A4E6 /* HappylocTests */,
+				17585D1D2DA3FE090099A4E6 /* HappylocUITests */,
+				17585D022DA3FE070099A4E6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		17585C992DA1485C0099A4E6 /* Products */ = {
+		17585D022DA3FE070099A4E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17585C982DA1485C0099A4E6 /* HappyLoc.app */,
-				17585CA52DA1485E0099A4E6 /* HappyLocTests.xctest */,
-				17585CAF2DA1485E0099A4E6 /* HappyLocUITests.xctest */,
+				17585D012DA3FE070099A4E6 /* Happyloc.app */,
+				17585D102DA3FE090099A4E6 /* HappylocTests.xctest */,
+				17585D1A2DA3FE090099A4E6 /* HappylocUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17585C972DA1485C0099A4E6 /* HappyLoc */ = {
+		17585D002DA3FE070099A4E6 /* Happyloc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17585CB92DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLoc" */;
+			buildConfigurationList = 17585D242DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "Happyloc" */;
 			buildPhases = (
-				17585C942DA1485C0099A4E6 /* Sources */,
-				17585C952DA1485C0099A4E6 /* Frameworks */,
-				17585C962DA1485C0099A4E6 /* Resources */,
+				17585CFD2DA3FE070099A4E6 /* Sources */,
+				17585CFE2DA3FE070099A4E6 /* Frameworks */,
+				17585CFF2DA3FE070099A4E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				17585C9A2DA1485C0099A4E6 /* HappyLoc */,
+				17585D032DA3FE070099A4E6 /* Happyloc */,
 			);
-			name = HappyLoc;
+			name = Happyloc;
 			packageProductDependencies = (
 			);
-			productName = HappyLoc;
-			productReference = 17585C982DA1485C0099A4E6 /* HappyLoc.app */;
+			productName = Happyloc;
+			productReference = 17585D012DA3FE070099A4E6 /* Happyloc.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17585CA42DA1485E0099A4E6 /* HappyLocTests */ = {
+		17585D0F2DA3FE090099A4E6 /* HappylocTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17585CBC2DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLocTests" */;
+			buildConfigurationList = 17585D272DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "HappylocTests" */;
 			buildPhases = (
-				17585CA12DA1485E0099A4E6 /* Sources */,
-				17585CA22DA1485E0099A4E6 /* Frameworks */,
-				17585CA32DA1485E0099A4E6 /* Resources */,
+				17585D0C2DA3FE090099A4E6 /* Sources */,
+				17585D0D2DA3FE090099A4E6 /* Frameworks */,
+				17585D0E2DA3FE090099A4E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17585CA72DA1485E0099A4E6 /* PBXTargetDependency */,
+				17585D122DA3FE090099A4E6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				17585CA82DA1485E0099A4E6 /* HappyLocTests */,
+				17585D132DA3FE090099A4E6 /* HappylocTests */,
 			);
-			name = HappyLocTests;
+			name = HappylocTests;
 			packageProductDependencies = (
 			);
-			productName = HappyLocTests;
-			productReference = 17585CA52DA1485E0099A4E6 /* HappyLocTests.xctest */;
+			productName = HappylocTests;
+			productReference = 17585D102DA3FE090099A4E6 /* HappylocTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		17585CAE2DA1485E0099A4E6 /* HappyLocUITests */ = {
+		17585D192DA3FE090099A4E6 /* HappylocUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17585CBF2DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLocUITests" */;
+			buildConfigurationList = 17585D2A2DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "HappylocUITests" */;
 			buildPhases = (
-				17585CAB2DA1485E0099A4E6 /* Sources */,
-				17585CAC2DA1485E0099A4E6 /* Frameworks */,
-				17585CAD2DA1485E0099A4E6 /* Resources */,
+				17585D162DA3FE090099A4E6 /* Sources */,
+				17585D172DA3FE090099A4E6 /* Frameworks */,
+				17585D182DA3FE090099A4E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17585CB12DA1485E0099A4E6 /* PBXTargetDependency */,
+				17585D1C2DA3FE090099A4E6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				17585CB22DA1485E0099A4E6 /* HappyLocUITests */,
+				17585D1D2DA3FE090099A4E6 /* HappylocUITests */,
 			);
-			name = HappyLocUITests;
+			name = HappylocUITests;
 			packageProductDependencies = (
 			);
-			productName = HappyLocUITests;
-			productReference = 17585CAF2DA1485E0099A4E6 /* HappyLocUITests.xctest */;
+			productName = HappylocUITests;
+			productReference = 17585D1A2DA3FE090099A4E6 /* HappylocUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		17585C902DA1485C0099A4E6 /* Project object */ = {
+		17585CF92DA3FE070099A4E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					17585C972DA1485C0099A4E6 = {
+					17585D002DA3FE070099A4E6 = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					17585CA42DA1485E0099A4E6 = {
+					17585D0F2DA3FE090099A4E6 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 17585C972DA1485C0099A4E6;
+						TestTargetID = 17585D002DA3FE070099A4E6;
 					};
-					17585CAE2DA1485E0099A4E6 = {
+					17585D192DA3FE090099A4E6 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 17585C972DA1485C0099A4E6;
+						TestTargetID = 17585D002DA3FE070099A4E6;
 					};
 				};
 			};
-			buildConfigurationList = 17585C932DA1485C0099A4E6 /* Build configuration list for PBXProject "HappyLoc" */;
+			buildConfigurationList = 17585CFC2DA3FE070099A4E6 /* Build configuration list for PBXProject "Happyloc" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 17585C8F2DA1485C0099A4E6;
+			mainGroup = 17585CF82DA3FE070099A4E6;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 17585C992DA1485C0099A4E6 /* Products */;
+			productRefGroup = 17585D022DA3FE070099A4E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17585C972DA1485C0099A4E6 /* HappyLoc */,
-				17585CA42DA1485E0099A4E6 /* HappyLocTests */,
-				17585CAE2DA1485E0099A4E6 /* HappyLocUITests */,
+				17585D002DA3FE070099A4E6 /* Happyloc */,
+				17585D0F2DA3FE090099A4E6 /* HappylocTests */,
+				17585D192DA3FE090099A4E6 /* HappylocUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		17585C962DA1485C0099A4E6 /* Resources */ = {
+		17585CFF2DA3FE070099A4E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CA32DA1485E0099A4E6 /* Resources */ = {
+		17585D0E2DA3FE090099A4E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CAD2DA1485E0099A4E6 /* Resources */ = {
+		17585D182DA3FE090099A4E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17585C942DA1485C0099A4E6 /* Sources */ = {
+		17585CFD2DA3FE070099A4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CA12DA1485E0099A4E6 /* Sources */ = {
+		17585D0C2DA3FE090099A4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17585CAB2DA1485E0099A4E6 /* Sources */ = {
+		17585D162DA3FE090099A4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17585CA72DA1485E0099A4E6 /* PBXTargetDependency */ = {
+		17585D122DA3FE090099A4E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17585C972DA1485C0099A4E6 /* HappyLoc */;
-			targetProxy = 17585CA62DA1485E0099A4E6 /* PBXContainerItemProxy */;
+			target = 17585D002DA3FE070099A4E6 /* Happyloc */;
+			targetProxy = 17585D112DA3FE090099A4E6 /* PBXContainerItemProxy */;
 		};
-		17585CB12DA1485E0099A4E6 /* PBXTargetDependency */ = {
+		17585D1C2DA3FE090099A4E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17585C972DA1485C0099A4E6 /* HappyLoc */;
-			targetProxy = 17585CB02DA1485E0099A4E6 /* PBXContainerItemProxy */;
+			target = 17585D002DA3FE070099A4E6 /* Happyloc */;
+			targetProxy = 17585D1B2DA3FE090099A4E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17585CB72DA1485E0099A4E6 /* Debug */ = {
+		17585D222DA3FE090099A4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		17585CB82DA1485E0099A4E6 /* Release */ = {
+		17585D232DA3FE090099A4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,7 +388,7 @@
 			};
 			name = Release;
 		};
-		17585CBA2DA1485E0099A4E6 /* Debug */ = {
+		17585D252DA3FE090099A4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -407,7 +407,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLoc";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.Happyloc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -415,7 +415,7 @@
 			};
 			name = Debug;
 		};
-		17585CBB2DA1485E0099A4E6 /* Release */ = {
+		17585D262DA3FE090099A4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -434,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLoc";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.Happyloc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,7 +442,7 @@
 			};
 			name = Release;
 		};
-		17585CBD2DA1485E0099A4E6 /* Debug */ = {
+		17585D282DA3FE090099A4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -451,16 +451,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLocTests";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.HappylocTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyLoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HappyLoc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happyloc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Happyloc";
 			};
 			name = Debug;
 		};
-		17585CBE2DA1485E0099A4E6 /* Release */ = {
+		17585D292DA3FE090099A4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,87 +469,87 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLocTests";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.HappylocTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyLoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HappyLoc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happyloc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Happyloc";
 			};
 			name = Release;
 		};
-		17585CC02DA1485E0099A4E6 /* Debug */ = {
+		17585D2B2DA3FE090099A4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLocUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.HappylocUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HappyLoc;
+				TEST_TARGET_NAME = Happyloc;
 			};
 			name = Debug;
 		};
-		17585CC12DA1485E0099A4E6 /* Release */ = {
+		17585D2C2DA3FE090099A4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Touraine.HappyLocUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = florian.touraine.HappylocUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HappyLoc;
+				TEST_TARGET_NAME = Happyloc;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17585C932DA1485C0099A4E6 /* Build configuration list for PBXProject "HappyLoc" */ = {
+		17585CFC2DA3FE070099A4E6 /* Build configuration list for PBXProject "Happyloc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17585CB72DA1485E0099A4E6 /* Debug */,
-				17585CB82DA1485E0099A4E6 /* Release */,
+				17585D222DA3FE090099A4E6 /* Debug */,
+				17585D232DA3FE090099A4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17585CB92DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLoc" */ = {
+		17585D242DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "Happyloc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17585CBA2DA1485E0099A4E6 /* Debug */,
-				17585CBB2DA1485E0099A4E6 /* Release */,
+				17585D252DA3FE090099A4E6 /* Debug */,
+				17585D262DA3FE090099A4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17585CBC2DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLocTests" */ = {
+		17585D272DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "HappylocTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17585CBD2DA1485E0099A4E6 /* Debug */,
-				17585CBE2DA1485E0099A4E6 /* Release */,
+				17585D282DA3FE090099A4E6 /* Debug */,
+				17585D292DA3FE090099A4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17585CBF2DA1485E0099A4E6 /* Build configuration list for PBXNativeTarget "HappyLocUITests" */ = {
+		17585D2A2DA3FE090099A4E6 /* Build configuration list for PBXNativeTarget "HappylocUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17585CC02DA1485E0099A4E6 /* Debug */,
-				17585CC12DA1485E0099A4E6 /* Release */,
+				17585D2B2DA3FE090099A4E6 /* Debug */,
+				17585D2C2DA3FE090099A4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 17585C902DA1485C0099A4E6 /* Project object */;
+	rootObject = 17585CF92DA3FE070099A4E6 /* Project object */;
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PlayerRowView: View {
     var player: Player
+    
     var body: some View {
         HStack {
             Image(player.profileImage)

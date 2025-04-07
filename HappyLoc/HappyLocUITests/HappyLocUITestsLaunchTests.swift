@@ -1,13 +1,13 @@
 //
-//  HappyLocUITestsLaunchTests.swift
-//  HappyLocUITests
+//  HappylocUITestsLaunchTests.swift
+//  HappylocUITests
 //
-//  Created by Florian Touraine on 05/04/2025.
+//  Created by Florian Touraine on 07/04/2025.
 //
 
 import XCTest
 
-final class HappyLocUITestsLaunchTests: XCTestCase {
+final class HappylocUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
