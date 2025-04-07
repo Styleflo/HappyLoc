@@ -1,40 +1,37 @@
 import SwiftUI
-
-
 import Foundation
+import SwiftData
 
 struct ClassementView: View {
-    @State private var players : [Player] = []
-    
+    @Environment(\.modelContext) private var modelContext
+    @Query private var players: [Player]
+
     var body: some View {
-        
-        Button("Add") {
-            players.append(Player(name:"Florian",score: 0, sleepScore: 0, profileImage: "Florian"))
-        }
-//        .padding(10)
-//        .background(Color.white)
-//        .cornerRadius(20)
-//        .padding(.all, 7)
-//        .background(Color.gray.opacity(0.4))
-//        .cornerRadius(30)
-//        .shadow(radius: 2)
-//        .padding(10)
-//        .background(Color.clear)
-        
-        if players.count == 0 {
-            Text("Pas encore d'inscrits")
-                .bold()
-        }
-        if players.count > 0 {
-            List {
-                ForEach($players) { $player in
+        VStack {
+            Button("Add Player") {
+                addPlayer()
+            }
+
+            if players.isEmpty {
+                Text("Pas encore d'inscrits")
+                    .bold()
+            } else {
+                List(players) { player in
                     PlayerRowView(player: player)
                 }
             }
         }
     }
+    
+    private func addPlayer() {
+        withAnimation {
+            let newPlayer = Player(name: "Florian", score: 100, sleepScore: 2, profileImage: "Florian")
+            modelContext.insert(newPlayer)
+        }
+    }
 }
 
-#Preview {
-    ClassementView()
-}
+//#Preview {
+//    ClassementView()
+//        .modelContainer(for: Player.self, inMemory: true)  // Injection du modelContainer dans la vue
+//}

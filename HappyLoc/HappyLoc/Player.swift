@@ -1,17 +1,27 @@
 //
-//  Player.swift
-//  HappyLoc
+//  player.swift
+//  Happyloc
 //
-//  Created by Florian Touraine on 05/04/2025.
+//  Created by Florian Touraine on 07/04/2025.
 //
 
 import Foundation
+import SwiftData
 
-struct Player: Identifiable {
-    let id = UUID()
+@Model
+final class Player {
+    var id: UUID
     var name: String
-//    let systemimage: String
     var score: Int
     var sleepScore: Int
     var profileImage: String
+    
+    
+    init(name: String, score:Int, sleepScore:Int, profileImage:String) {
+        self.id = UUID()
+        self.name = name
+        self.score = score
+        self.sleepScore = sleepScore
+        self.profileImage = profileImage
+    }
 }

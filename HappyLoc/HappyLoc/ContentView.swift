@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct ContentView: View {
     @State private var showSplash = true
-    let username = "Mina" // à personnaliser ou rendre dynamique plus tard
+    let username = "Mina"
 
     var body: some View {
         Group {
