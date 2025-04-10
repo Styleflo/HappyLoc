@@ -32,6 +32,6 @@ struct SplashView: View {
     }
 }
 
-//#Preview {
-//    SplashView(isActive: .constant(true), username: "Mina")
-//}
+#Preview {
+    SplashView(isActive: .constant(true), username: "Mina")
+}

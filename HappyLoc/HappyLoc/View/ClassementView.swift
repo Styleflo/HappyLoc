@@ -7,31 +7,28 @@ struct ClassementView: View {
     @Query private var players: [Player]
 
     var body: some View {
+        let pm = PlayerManager(modelContext)
         VStack {
             Button("Add Player") {
-                addPlayer()
+                pm.addPlayer(name: "Ewan", score: 27, sleepScore: 0, ImageData: nil)
             }
 
             if players.isEmpty {
                 Text("Pas encore d'inscrits")
                     .bold()
             } else {
-                List(players) { player in
+                List(players.sorted(by: { $0.score >= $1.score })) { player in
                     PlayerRowView(player: player)
                 }
             }
         }
     }
-    
-    private func addPlayer() {
-        withAnimation {
-            let newPlayer = Player(name: "Florian", score: 100, sleepScore: 2, profileImage: "Florian")
-            modelContext.insert(newPlayer)
-        }
+    private func f () {
+        
     }
 }
 
-//#Preview {
-//    ClassementView()
-//        .modelContainer(for: Player.self, inMemory: true)  // Injection du modelContainer dans la vue
-//}
+#Preview {
+    ClassementView()
+        .modelContainer(for: Player.self, inMemory: true)
+}

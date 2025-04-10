@@ -14,14 +14,15 @@ final class Player {
     var name: String
     var score: Int
     var sleepScore: Int
-    var profileImage: String
+    var imageData: Data?
     
     
-    init(name: String, score:Int, sleepScore:Int, profileImage:String) {
+    init(name: String, score:Int, sleepScore:Int, imageData: Data?) {
         self.id = UUID()
         self.name = name
         self.score = score
         self.sleepScore = sleepScore
-        self.profileImage = profileImage
+        self.imageData = imageData
+        
     }
 }
