@@ -13,8 +13,9 @@ struct PlayerRowView: View {
     
     var body: some View {
         HStack {
-            if let data = player.imageData {
-                Image(systemName: "cloud.fill")
+            if let data = player.imageData,
+                  let uiImage = UIImage(data: data) {
+                Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 60, height: 40)
@@ -23,13 +24,14 @@ struct PlayerRowView: View {
                         Circle().stroke(.black, lineWidth: 2)
                     }
             } else {
-                Image(systemName: "person.fill")
+                Image(systemName: "person.circle.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 40)
                     .clipShape(.circle)
+                    .foregroundColor(.blue)
                     .overlay{
-                        Circle().stroke(.black, lineWidth: 2)
+                        Circle().stroke(.blue, lineWidth: 2)
                     }
             }
             

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 
 struct AddPlayerView: View {
@@ -14,6 +15,7 @@ struct AddPlayerView: View {
     
     @State private var name: String = ""
     @State private var image: Data?
+    @State private var phtotoPickerItem: PhotosPickerItem?
     
     var body: some View {
         let pm = PlayerManager(modelContext)
@@ -21,15 +23,38 @@ struct AddPlayerView: View {
             Section {
                 HStack {
                     Spacer()
-                    Image(systemName: "person.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .scaledToFit()
-                        .frame(width: 180, height: 120)
-                        .clipShape(.circle)
-                        .overlay{
-                            Circle().stroke(.black, lineWidth: 2)
+                    PhotosPicker(selection: $phtotoPickerItem, matching: .images) {
+                        if let image,
+                           let uiImage = UIImage(data: image) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 180, height: 120)
+                                .clipShape(.circle)
+                                .overlay {
+                                    Circle().stroke(.black, lineWidth: 2)
+                                }
+                        } else {
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 180, height: 120)
+                                .clipShape(.circle)
+                                .foregroundColor(.blue)
+                                .overlay {
+                                    Circle().stroke(.blue, lineWidth: 2)
+                                }
                         }
+                    }
+                    .onChange(of: phtotoPickerItem) {
+                        Task {
+                            if let data = try? await phtotoPickerItem?.loadTransferable(type: Data.self) {
+                                image = data
+                            }
+                        }
+                    }
+
+
                     Spacer()
                 }
                 
@@ -43,6 +68,14 @@ struct AddPlayerView: View {
                         dismiss()
                     }
                     .disabled(name.trimmingCharacters(in: .whitespaces).isEmpty)
+                    Spacer()
+                }
+                
+                HStack {
+                    Spacer()
+                    Button("Annuler") {
+                        dismiss()
+                    }
                     Spacer()
                 }
             }

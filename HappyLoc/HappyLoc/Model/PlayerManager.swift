@@ -48,4 +48,16 @@ class PlayerManager: ObservableObject {
     func deletePlayer(player: Player) {
         modelcontext.delete(player)
     }
+    
+    func updatePlayer(player: Player,name: String?, score: Int?, sleepScore: Int?, ImageData: Data?) {
+        player.name = name ?? player.name
+        player.score = score ?? player.score
+        player.sleepScore = sleepScore ?? player.sleepScore
+        player.imageData = ImageData ?? player.imageData
+        do {
+            try modelcontext.save()
+        } catch {
+            print("Erreur lors de la mise à jour du joueur : \(error)")
+        }
+    }
 }

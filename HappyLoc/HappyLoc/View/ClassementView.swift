@@ -66,13 +66,13 @@ struct ClassementView: View {
                         .onDelete { indexSet in
                             withAnimation {
                                 for index in indexSet {
-                                    let sortedPlayers = players.sorted(by: { $0.score >= $1.score })
-                                    let playerToDelete = sortedPlayers[index]
+                                    let playerToDelete = filteredPlayers[index]
                                     let pm = PlayerManager(modelContext)
                                     pm.deletePlayer(player: playerToDelete)
                                 }
                             }
                         }
+
                     }
                     .searchable(text: $searchText)
                 }
