@@ -46,10 +46,7 @@ struct PlayerRowView: View {
                 Image(systemName: "moon.fill")
                     .foregroundColor(.yellow)
             }
-
-            
         }
-//        .padding()
     }
 }
 

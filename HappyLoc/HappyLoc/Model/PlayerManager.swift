@@ -30,4 +30,22 @@ class PlayerManager: ObservableObject {
             return []
         }
     }
+    
+    func deletePlayer(id: UUID) {
+        let descriptor = FetchDescriptor<Player>(predicate: #Predicate { $0.id == id })
+        
+        do {
+            if let player = try modelcontext.fetch(descriptor).first {
+                modelcontext.delete(player)
+            } else {
+                print("Aucun joueur trouvé avec l’ID : \(id)")
+            }
+        } catch {
+            print("Erreur lors de la suppression du joueur : \(error)")
+        }
+    }
+    
+    func deletePlayer(player: Player) {
+        modelcontext.delete(player)
+    }
 }
