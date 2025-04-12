@@ -65,11 +65,24 @@ class PlayerManager: ObservableObject {
         updatePlayer(player: player, name: nil, score: player.score + 10, sleepScore: player.sleepScore + 1, ImageData: nil)
         let entry1 = SleepEntry(date: date, player: player)
         modelcontext.insert(entry1)
+        player.sleepEntries.append(entry1)
+        do {
+            try modelcontext.save()
+        } catch {
+            print("Erreur lors de l'ajout d'une donnée de sommeil au joueur : \(error)")
+        }
     }
     
     func addPoint(player: Player, info: String, date: Date, point: Int) {
         updatePlayer(player: player, name: nil, score: player.score + point, sleepScore: nil, ImageData: nil)
         let entry1 = ScoreEntry(date: date, info: info, player: player)
         modelcontext.insert(entry1)
+        player.scoreEntries.append(entry1)
+        do {
+            try modelcontext.save()
+        } catch {
+            print("Erreur lors de l'ajout d'une donnée de score au joueur : \(error)")
+        }
+        
     }
 }
