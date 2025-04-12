@@ -12,7 +12,7 @@ import SwiftData
 struct HappylocApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Player.self,
+            Player.self, SleepEntry.self, ScoreEntry.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

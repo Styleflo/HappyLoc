@@ -12,6 +12,9 @@ struct PlayerView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var phtotoPickerItem: PhotosPickerItem?
     @State private var editedName: String = ""
+    @State private var showingScoreView = false
+    @State private var showingNightView = false
+    
     var player: Player
     var pm: PlayerManager {
             PlayerManager(modelContext)
@@ -79,7 +82,7 @@ struct PlayerView: View {
             }
             
             HStack {
-                Button(action: {pm.updatePlayer(player: player, name: nil, score: player.score + 10, sleepScore: player.sleepScore + 1, ImageData: nil)}) {
+                Button(action: {showingNightView.toggle()}) {
                     Label("Nuit", systemImage: "moon.fill")
                         .foregroundColor(.white)
                         .padding()
@@ -90,7 +93,7 @@ struct PlayerView: View {
                 
                 Spacer()
                 
-                Button(action: {pm.updatePlayer(player: player, name: nil, score: player.score + 10, sleepScore: nil, ImageData: nil)}) {
+                Button(action: {showingScoreView.toggle()}) {
                     Label("points", systemImage: "atom")
                         .foregroundColor(.white)
                         .padding()
@@ -104,6 +107,12 @@ struct PlayerView: View {
             Spacer()
         }
         .padding(30)
+        .sheet(isPresented: $showingNightView) {
+            NightPickerView(player: player)
+        }
+        .sheet(isPresented: $showingScoreView) {
+            AddScoreView(player: player)
+        }
     }
 }
 

@@ -60,4 +60,16 @@ class PlayerManager: ObservableObject {
             print("Erreur lors de la mise à jour du joueur : \(error)")
         }
     }
+    
+    func addNight(player: Player, date: Date) {
+        updatePlayer(player: player, name: nil, score: player.score + 10, sleepScore: player.sleepScore + 1, ImageData: nil)
+        let entry1 = SleepEntry(date: date, player: player)
+        modelcontext.insert(entry1)
+    }
+    
+    func addPoint(player: Player, info: String, date: Date, point: Int) {
+        updatePlayer(player: player, name: nil, score: player.score + point, sleepScore: nil, ImageData: nil)
+        let entry1 = ScoreEntry(date: date, info: info, player: player)
+        modelcontext.insert(entry1)
+    }
 }
