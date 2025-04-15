@@ -30,6 +30,11 @@ struct AddScoreView: View {
                 .padding()
             
             TextField("quelle est la raison ?", text: $info)
+                .onChange(of: info) {
+                    if info.count > 20 {
+                        info = String(info.prefix(20))
+                    }
+                }
                 .padding()
                 .frame(height: 70)
                 .textFieldStyle(RoundedBorderTextFieldStyle())

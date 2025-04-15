@@ -72,7 +72,6 @@ struct ClassementView: View {
                                 }
                             }
                         }
-
                     }
                     .searchable(text: $searchText)
                 }

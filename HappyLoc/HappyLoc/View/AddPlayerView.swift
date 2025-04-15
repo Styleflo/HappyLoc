@@ -64,7 +64,7 @@ struct AddPlayerView: View {
                 HStack {
                     Spacer()
                     Button("Submit") {
-                        pm.addPlayer(name: name, score: 10, sleepScore: 0, ImageData: image)
+                        pm.addPlayer(name: name, score: 0, sleepScore: 0, ImageData: image)
                         dismiss()
                     }
                     .disabled(name.trimmingCharacters(in: .whitespaces).isEmpty)

@@ -34,11 +34,13 @@ final class Player {
 
 @Model
 class SleepEntry {
+    var id: UUID
     var date: Date
     var player: Player
 
 
     init(date: Date, player: Player) {
+        self.id = UUID()
         self.date = date
         self.player = player
     }
@@ -46,13 +48,17 @@ class SleepEntry {
 
 @Model
 class ScoreEntry {
+    var id: UUID
     var date: Date
     var info: String
+    var score: Int
     var player: Player
 
-    init(date: Date, info: String, player: Player) {
+    init(date: Date, info: String, score: Int, player: Player) {
+        self.id = UUID()
         self.date = date
         self.info = info
+        self.score = score
         self.player = player
     }
 }

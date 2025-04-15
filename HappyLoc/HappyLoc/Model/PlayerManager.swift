@@ -75,7 +75,7 @@ class PlayerManager: ObservableObject {
     
     func addPoint(player: Player, info: String, date: Date, point: Int) {
         updatePlayer(player: player, name: nil, score: player.score + point, sleepScore: nil, ImageData: nil)
-        let entry1 = ScoreEntry(date: date, info: info, player: player)
+        let entry1 = ScoreEntry(date: date, info: info, score: point, player: player)
         modelcontext.insert(entry1)
         player.scoreEntries.append(entry1)
         do {
@@ -85,4 +85,5 @@ class PlayerManager: ObservableObject {
         }
         
     }
+    
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import SwiftData
 
 struct PlayerView: View {
     @Environment(\.modelContext) private var modelContext
@@ -24,6 +25,14 @@ struct PlayerView: View {
             self.player = player
             _editedName = State(initialValue: player.name)
         }
+    
+    var combinedEntries: [EntryType] {
+        (player.scoreEntries.map { EntryType.score($0) } +
+         player.sleepEntries.map { EntryType.sleep($0) })
+        .sorted { $0.date > $1.date }
+    }
+
+
     
     var body: some View {
         VStack {
@@ -105,6 +114,20 @@ struct PlayerView: View {
             }
             .padding()
             Spacer()
+            
+            List {
+                ForEach(combinedEntries) { entry in
+                    switch entry {
+                    case .score(let scoreEntry):
+                        ScoreEntryView(scoreEntry: scoreEntry)
+                    case .sleep(let sleepEntry):
+                        SleepEntryView(sleepEntry: sleepEntry)
+                    }
+                }
+            }
+            .listStyle(.plain)
+
+
         }
         .padding(30)
         .sheet(isPresented: $showingNightView) {
